@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@theme {
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --color-fire: #D9272E;
+  --color-fire-deep: #B91C24;
+  --color-navy: #101820;
+  --color-surface: #18232D;
+  --color-warm: #F8F8F5;
+  --color-muted: #68737D;
+  --color-line: #E5E7EB;
+  --color-champagne: #C7A56B;
+}
+body { @apply bg-warm text-navy font-sans antialiased; }
+:focus-visible { outline: 3px solid var(--color-champagne); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; scroll-behavior: auto !important; } }
